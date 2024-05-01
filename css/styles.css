@@ -66,6 +66,12 @@ main{
     border-radius: 0.3rem
 }
 
+.link:hover, .link:focus{
+    background-color: var(--clr-Green);
+    color: var(--clr-Off-Black);
+    cursor: pointer;
+}
+
 a{
     color: var(--clr-White);
     text-decoration: none;
