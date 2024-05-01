@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+@import url('./reset.css');
+
+:root{
+    --clr-Green: hsl(75, 94%, 57%); 
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-Grey: hsl(0, 0%, 20%);
+    --clr-Dark-Grey: hsl(0, 0%, 12%);
+    --clr-Off-Black: hsl(0, 0%, 8%);
+}
+
+body{
+    background-color: var(--clr-Off-Black);
+    font-family: "Inter";
+    font-weight: 600;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    color: var(--clr-White);
+    text-align: center;
+}
+
+main{
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    background-color: var(--clr-Dark-Grey);
+    width: clamp(15%, 390px, 90%);
+    height: clamp(60%, 610px, 95%);
+    padding: 1.1rem 2.5rem;   
+    border-radius: 1rem; 
+}
+
+.container img{
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 1.65rem;
+    font-weight: 700;
+}
+
+.job{
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 60%);
+    margin-bottom: 3rem;
+}
+
+.link{
+    background-color: var(--clr-Grey);
+    width: clamp(10rem, 300px, 95%);
+    margin-inline:  auto;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    height: 2.6rem;
+    display: grid;
+    place-content: center;
+    border-radius: 0.3rem
+}
+
+a{
+    color: var(--clr-White);
+    text-decoration: none;
+}
+
+
+.place{
+    color: var(--clr-Green);
+    margin-top: -0.8rem;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+@media (width < 400px) {
+    .container{
+        margin: 5rem 0;
+    }
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    position: fixed; bottom: 0; right: 5%;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
